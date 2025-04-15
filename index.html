@@ -32,6 +32,14 @@
     .links a:hover {
       text-decoration: underline;
     }
+    .section {
+      margin-top: 2rem;
+    }
+    .experience, .education, .skills {
+      border-left: 3px solid #ccc;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -47,24 +55,25 @@
   </header>
 
   <main>
-    <h2>About Me</h2>
-    <p>
-      I'm currently pursuing my Master's in Computer Engineering at San Jose State University. I'm actively seeking summer internships in Machine Learning and Artificial Intelligence.
-      I have a strong background in software engineering from my work at Dell and Versa Networks, and my academic focus includes Advanced Data Mining, Artificial Intelligence, and Data Engineering.
-    </p>
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm currently pursuing my Master's in Computer Engineering at San Jose State University. I'm actively seeking summer internships in Machine Learning and Artificial Intelligence.
+        I have a strong background in software engineering from my work at Dell and Versa Networks, and my academic focus includes Advanced Data Mining, Artificial Intelligence, and Data Engineering.
+      </p>
+    </section>
 
-    <h2>Links</h2>
-    <div class="links">
-      <a href="https://docs.google.com/document/d/1zCSBleO5gDhvgbyb184S1P1eep-F3YbS/edit?usp=drive_link&ouid=116027453200146884691&rtpof=true&sd=true" target="_blank">Resume</a>
-      <a href="https://www.linkedin.com/in/smithakedila" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">GitHub (coming soon)</a>
-      <a href="#" target="_blank">Projects (coming soon)</a>
-      <a href="mailto:smitha.kedila@sjsu.edu">Email Me</a>
-    </div>
-  </main>
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Dell Technologies – Software Engineer</h3>
+        <p>Worked on feature development and data protection for Kubernetes assets using Golang and Java. Collaborated with cross-functional teams to implement scalable software modules.</p>
+      </div>
+      <div class="experience">
+        <h3>Versa Networks – Software Engineer</h3>
+        <p>Contributed to SD-WAN server development using C and YANG. Focused on high availability features and networking protocols for enterprise solutions.</p>
+      </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Smitha Kedila
-  </footer>
-</body>
-</html>
+    <section class="section">
+      <h2>
