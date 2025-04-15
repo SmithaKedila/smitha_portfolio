@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smitha Kedila – MSCE at SJSU, experienced in ML, AI, and software engineering. Seeking internships.">
   <title>Smitha Kedila</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -36,8 +38,9 @@
       color: #0077b6;
       font-weight: 600;
     }
-    nav a:hover {
+    nav a:hover, nav a.active {
       color: #0096c7;
+      text-decoration: underline;
     }
     main {
       padding: 2rem 1.5rem;
@@ -68,6 +71,10 @@
     }
     .links a:hover {
       background-color: #b2ebf2;
+    }
+    .links a.disabled {
+      pointer-events: none;
+      opacity: 0.6;
     }
     footer {
       text-align: center;
@@ -144,10 +151,10 @@
     <section id="links" class="section fade-in">
       <h2>Links</h2>
       <div class="links">
-        <a href="https://docs.google.com/document/d/1zCSBleO5gDhvgbyb184S1P1eep-F3YbS/edit?usp=drive_link&ouid=116027453200146884691&rtpof=true&sd=true" target="_blank">Resume</a>
+        <a href="https://docs.google.com/document/d/1zCSBleO5gDhvgbyb184S1P1eep-F3YbS/edit?usp=drive_link&ouid=116027453200146884691&rtpof=true&sd=true" download>Download Resume</a>
         <a href="https://www.linkedin.com/in/smithakedila" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">GitHub (coming soon)</a>
-        <a href="#" target="_blank">Projects (coming soon)</a>
+        <a href="#" class="disabled" onclick="return false;">GitHub (coming soon)</a>
+        <a href="#" class="disabled" onclick="return false;">Projects (coming soon)</a>
         <a href="mailto:smitha.kedila@sjsu.edu">Email Me</a>
       </div>
     </section>
@@ -169,6 +176,19 @@
     }, { threshold: 0.1 });
 
     fadeIns.forEach(section => observer.observe(section));
+
+    // Highlight active nav link
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 100;
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.hash);
+        if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
