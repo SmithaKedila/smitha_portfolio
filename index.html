@@ -1,195 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Smitha Kedila – MSCE at SJSU, experienced in ML, AI, and software engineering. Seeking internships.">
-  <title>Smitha Kedila</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smitha Kedila | Portfolio</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: url('https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI') no-repeat center center fixed;
-      background-size: cover;
-      color: #f1f1f1;
-      scroll-behavior: smooth;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      padding: 3rem 1rem;
+      background: #0d6efd;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    header h1 {
+      margin: 0;
     }
-    nav a {
-      margin: 0 1.2rem;
-      text-decoration: none;
-      color: #90e0ef;
-      font-weight: 600;
-    }
-    nav a:hover, nav a.active {
-      color: #caf0f8;
-      text-decoration: underline;
-    }
-    main {
-      padding: 2rem 1.5rem;
+    .container {
       max-width: 900px;
       margin: auto;
+      padding: 2rem;
+      background: white;
+    }
+    h2 {
+      color: #0d6efd;
+    }
+    ul {
+      padding-left: 20px;
     }
     .section {
-      margin-top: 3rem;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
+      margin-bottom: 2rem;
     }
-    .experience:hover, .education:hover, .skills:hover {
-      transform: translateY(-4px);
-    }
-    .links a {
-      display: inline-block;
-      margin: 0.3rem 0.8rem 0.3rem 0;
-      padding: 0.4rem 0.8rem;
-      border-radius: 8px;
-      background-color: #023e8a;
-      color: #fff;
+    .contact a {
+      display: block;
+      color: #0d6efd;
       text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.2s;
-    }
-    .links a:hover {
-      background-color: #0077b6;
-    }
-    .links a.disabled {
-      pointer-events: none;
-      opacity: 0.6;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #ccc;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-top: 1px solid #333;
-      margin-top: 3rem;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Smitha Kedila</h1>
-    <p>MSCE at San Jose State University</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#links">Links</a>
-  </nav>
+<header>
+  <h1>Smitha Kedila</h1>
+  <p>Graduate Student | Software & Systems Engineer</p>
+</header>
 
-  <main>
-    <section id="about" class="section fade-in">
-      <h2>About Me</h2>
-      <p>
-        I'm currently pursuing my Master's in Computer Engineering at San Jose State University. I'm actively seeking summer internships in Machine Learning and Artificial Intelligence.
-        I have a strong background in software engineering from my work at Dell and Versa Networks, and my academic focus includes Advanced Data Mining, Artificial Intelligence, and Data Engineering.
-      </p>
-    </section>
+<div class="container">
+  <div class="section contact">
+    <h2>Contact</h2>
+    <p>San Jose, CA</p>
+    <a href="mailto:smitha.kedila@sjsu.edu">smitha.kedila@sjsu.edu</a>
+    <a href="https://linkedin.com/in/smithakedila" target="_blank">LinkedIn</a>
+    <a href="https://github.com/SmithaKedila" target="_blank">GitHub</a>
+  </div>
 
-    <section id="experience" class="section fade-in">
-      <h2>Experience</h2>
-      <div class="experience">
-        <h3>Dell Technologies – Software Engineer</h3>
-        <p>Worked on feature development and data protection for Kubernetes assets using Golang and Java. Collaborated with cross-functional teams to implement scalable software modules.</p>
-      </div>
-      <div class="experience">
-        <h3>Versa Networks – Software Engineer</h3>
-        <p>Contributed to SD-WAN server development using C and YANG. Focused on high availability features and networking protocols for enterprise solutions.</p>
-      </div>
-    </section>
+  <div class="section">
+    <h2>Summary</h2>
+    <p>
+      Graduate student in Computer Engineering at San José State University with 4 years of industry experience in software development, distributed systems, and network engineering.
+      Skilled in C/C++, Python, Go, Verilog HDL, and Java. Experienced in cloud-native platforms, FPGA design (academic), and machine learning frameworks including PyTorch and TensorFlow.
+      Passionate about research in hardware/software co-design, programmable data planes, and distributed ML systems.
+    </p>
+  </div>
 
-    <section id="education" class="section fade-in">
-      <h2>Education</h2>
-      <div class="education">
-        <h3>San Jose State University</h3>
-        <p>MS in Computer Engineering – Relevant coursework: Advanced Data Mining, AI, Data Engineering</p>
-      </div>
-    </section>
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>San Jose State University</strong> — MS in Computer Engineering<br/>GPA: 4.0/4.0</p>
+    <p><strong>The National Institute of Engineering</strong> — BE in Electronics & Communication<br/>GPA: 8.9/10</p>
+  </div>
 
-    <section id="skills" class="section fade-in">
-      <h2>Skills</h2>
-      <div class="skills">
-        <p><strong>Programming:</strong> Python, Java, C, Golang</p>
-        <p><strong>Tools:</strong> Kubernetes, Docker, Git, Jenkins</p>
-        <p><strong>Domains:</strong> Machine Learning, Data Engineering, Networking, Cloud Infrastructure</p>
-      </div>
-    </section>
+  <div class="section">
+    <h2>Experience</h2>
+    <p><strong>Software Engineer – Dell, Bengaluru</strong></p>
+    <ul>
+      <li>Implemented namespace-level parallelism in Kubernetes, reducing config overhead by 40%.</li>
+      <li>Optimized volume protection with Go concurrency, reducing time by 60 minutes.</li>
+      <li>Developed scalable features for containerized workloads using Go.</li>
+    </ul>
+    <p><strong>Software Engineer – Versa Networks, Bengaluru</strong></p>
+    <ul>
+      <li>Designed real-time client/server stats using TWAMP.</li>
+      <li>Improved HA by enhancing state recovery and failover in SD-WAN.</li>
+      <li>Reduced downtime by 35%, improved troubleshooting by 40%.</li>
+    </ul>
+  </div>
 
-    <section id="links" class="section fade-in">
-      <h2>Links</h2>
-      <div class="links">
-        <a href="https://docs.google.com/document/d/1zCSBleO5gDhvgbyb184S1P1eep-F3YbS/edit?usp=drive_link&ouid=116027453200146884691&rtpof=true&sd=true" download>Download Resume</a>
-        <a href="https://www.linkedin.com/in/smithakedila" target="_blank">LinkedIn</a>
-        <a href="#" class="disabled" onclick="return false;">GitHub (coming soon)</a>
-        <a href="#" class="disabled" onclick="return false;">Projects (coming soon)</a>
-        <a href="mailto:smitha.kedila@sjsu.edu">Email Me</a>
-      </div>
-    </section>
-  </main>
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>MIND News Recommender:</strong> Used BERT4Rec with PyTorch for personalized recommendations.</li>
+      <li><strong>Health Agent (CrewAI):</strong> Built secure goal-oriented assistant with LangChain & Ollama.</li>
+      <li><strong>Song Recommender:</strong> Used XGBoost/CatBoost for collaborative filtering and prediction.</li>
+    </ul>
+  </div>
 
-  <footer>
-    &copy; 2025 Smitha Kedila
-  </footer>
+  <div class="section">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> C, C++, Python, Java, Go, Verilog HDL, MATLAB</p>
+    <p><strong>Frameworks:</strong> PyTorch, TensorFlow, scikit-learn, XGBoost, Spring Boot</p>
+    <p><strong>Tools:</strong> Kubernetes, Docker, Git, JUnit, CrewAI, Ollama</p>
+    <p><strong>Systems:</strong> RTOS, Embedded Linux, SD-WAN, Distributed Systems</p>
+  </div>
+</div>
 
-  <script>
-    const fadeIns = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    fadeIns.forEach(section => observer.observe(section));
-
-    // Highlight active nav link
-    const navLinks = document.querySelectorAll('nav a');
-    window.addEventListener('scroll', () => {
-      let fromTop = window.scrollY + 100;
-      navLinks.forEach(link => {
-        const section = document.querySelector(link.hash);
-        if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-          navLinks.forEach(l => l.classList.remove('active'));
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
